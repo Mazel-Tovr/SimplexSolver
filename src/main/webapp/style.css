@@ -1,0 +1,17 @@
+.content
+{
+   margin: auto;
+   width: 30em;
+}
+.title
+{
+    text-align: center;
+}
+
+.form div
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    width: 25em;
+}

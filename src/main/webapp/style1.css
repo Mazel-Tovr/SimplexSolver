@@ -1,0 +1,16 @@
+.title
+{
+    text-align: center;
+}
+.content
+{
+   margin: auto;
+   width: 80em;
+}
+
+.button__
+{
+     width: 0%;
+     margin: auto;
+     margin-top: 20px;
+}
