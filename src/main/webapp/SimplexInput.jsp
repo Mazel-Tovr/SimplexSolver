@@ -36,7 +36,7 @@
                                     <td><input type="number" name = "y${i}"></td>
                                 </c:forEach>
                                 <td>
-                                    <select name = "y${i}">
+                                    <select name = "y${i} sign">
                                         <option >=</option>
                                         <option ><=</option>
                                         <option >>=</option>
@@ -52,7 +52,7 @@
                                 </c:forEach>
 
                                 <td>
-                                <select name = "func">
+                                <select name = "func sign">
                                     <option >min</option>
                                     <option >max</option>
                                 </select>
@@ -71,7 +71,7 @@
                         <tr>
                             <td> <c:out value = "X${i}"/></td>
                                 <td>
-                                    <select name = "x${i}">
+                                    <select name = "x${i} sign">
                                         <option ><</option>
                                         <option >></option>
                                     </select>

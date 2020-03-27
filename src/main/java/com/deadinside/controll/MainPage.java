@@ -12,10 +12,6 @@ public class MainPage extends HttpServlet
 {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        Integer amountVariables =   Integer.parseInt(req.getParameter("amountVariables"));
-//        req.setAttribute("amountVariables",amountVariables);
-//        Integer amountConstraints =   Integer.parseInt(req.getParameter("amountConstraints"));
-//        req.setAttribute("amountConstraints",amountConstraints);
         req.getRequestDispatcher("/SimplexInput.jsp").forward(req, resp);
     }
 }
