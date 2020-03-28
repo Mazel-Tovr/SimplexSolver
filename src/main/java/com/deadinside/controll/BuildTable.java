@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 
 @WebServlet("/tablebuild")
@@ -22,6 +23,13 @@ public class BuildTable extends HttpServlet
         SimplexSolver solver = new SimplexSolver();
         solver.solve(p);
 
+        PrintWriter printWriter = resp.getWriter();
+
+        for (String s : solver.getSolve()) {
+            printWriter.println(s);
+        }
+
+        printWriter.close();
     }
 
 
