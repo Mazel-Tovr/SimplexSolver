@@ -42,7 +42,7 @@ public class Main {
         SimplexSolver solver = new SimplexSolver();
         Double res = solver.solve(p);
 
-        if(res == Double.NaN)
+        if(Double.isNaN(res))
         {
             System.out.println("Problem has no solution!");
         }
