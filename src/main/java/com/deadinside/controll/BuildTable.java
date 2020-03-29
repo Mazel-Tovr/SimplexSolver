@@ -23,13 +23,15 @@ public class BuildTable extends HttpServlet
         SimplexSolver solver = new SimplexSolver();
         solver.solve(p);
 
-        PrintWriter printWriter = resp.getWriter();
+        req.setAttribute("resultList",solver.getSolve());
+        req.getRequestDispatcher("/SimplexResult.jsp").forward(req, resp);
+//        PrintWriter printWriter = resp.getWriter();
+//
+//        for (String s : solver.getSolve()) {
+//            printWriter.println(s);
+//        }
 
-        for (String s : solver.getSolve()) {
-            printWriter.println(s);
-        }
-
-        printWriter.close();
+        //printWriter.close();
     }
 
 
